@@ -124,7 +124,7 @@ resource "aws_ecr_repository" "ecr-repo" {
 }
 
 resource "aws_iam_instance_profile" "ec2ecr-profile" {
-  name = "aduncanswarmprofile"
+  name = "TrexSwarmProfile"
   role = aws_iam_role.ec2fulltoecr.name
 }
 
