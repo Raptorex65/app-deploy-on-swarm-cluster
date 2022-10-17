@@ -25,7 +25,8 @@ services:
         parallelism: 2
         delay: 5s
         order: start-first
-    ports: "80:80"
+    ports: 
+      - "80:80"
     networks:
       - clarusnet
 
@@ -36,6 +37,6 @@ networks:
 volumes:
   db-data:
 
-config:
+configs:
   table:
     file: ./init.sql

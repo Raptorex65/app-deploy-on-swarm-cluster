@@ -21,11 +21,11 @@ locals {
 }
 
 data "aws_caller_identity" "current" {}
-          
+
 data "aws_region" "current" {
-  name = "us-east-1"                                                                    
+  name = "us-east-1"
 }
-             
+
 data "template_file" "leader-master" {
   template = <<EOF
     #! /bin/bash
@@ -62,7 +62,7 @@ data "template_file" "leader-master" {
   EOF
 }
 
-data "template_file" "manager" {         
+data "template_file" "manager" {
   template = <<EOF
     #! /bin/bash
     yum update -y
