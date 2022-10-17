@@ -16,8 +16,8 @@ provider "aws" {
 }
 
 locals {
-  github-repo     = "https://github.com/Raptorex65/phonebook-with-swarm.git"
-  github-file-url = "https://raw.githubusercontent.com/Raptorex65/phonebook-with-swarm/main/"
+  github-repo     = "https://github.com/Raptorex65/app-deploy-on-swarm-cluster.git"
+  github-file-url = "https://raw.githubusercontent.com/Raptorex65/app-deploy-on-swarm-cluster/main/"
 }
 
 data "aws_caller_identity" "current" {}
